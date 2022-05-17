@@ -3,3 +3,25 @@ body{
     grid-template-columns: 20%, 20%, 20%, 20%, 20%;
     grid-template-rows: 20%, 20%, 20%, 20%, 20%;
 }
+
+header{
+    grid-area: 1/2/1/5;
+}
+
+#sideNav{
+    position: static;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(168, 164, 164);
+}
+
+#mainBody{
+    grid-area: 2/2/4/4;
+}
+
+footer{
+    grid-area: 5/2/5/5;
+}
