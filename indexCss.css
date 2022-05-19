@@ -1,27 +1,112 @@
-body{
-    display:grid;
-    grid-template-columns: 20%, 20%, 20%, 20%, 20%;
-    grid-template-rows: 20%, 20%, 20%, 20%, 20%;
+body {
+    background-color: rgb(240, 238, 235);
 }
 
-header{
-    grid-area: 1/2/1/5;
+img[alt]{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-style: italic;
 }
 
-#sideNav{
-    position: static;
+#sideNav {
+    position: fixed;
+    display: grid;
     height: 100%;
-    width: 100px;
+    width: 20%;
     top: 0;
     left: 0;
+    overflow-wrap: break-word;
+    overflow-x:hidden;
+    overflow-y: auto;
     z-index: 1;
+    border-right: 2px solid black;
+    box-shadow: 3px 0px 6px rgb(94, 90, 90);
+}
+
+#sideNav::-webkit-scrollbar{
+    display: none;
+}
+
+#navBox{
+    position: relative;
+    overflow-wrap: break-word;
+    text-size-adjust: 100%;
+    height: 110%;
+    width: 100%;
     background-color: rgb(168, 164, 164);
+    text-align: left;
 }
 
-#mainBody{
-    grid-area: 2/2/4/4;
+#myPhoto {
+    margin: 2px 2px 5px 2px;
+    width: 97.5%;
+    height: 50%;
+    box-shadow: 0px 0px 4px 1px rgb(116, 111, 111);
+    border: 0.5px solid rgb(213, 213, 250);
+    border-radius: 0.8%;
 }
 
-footer{
-    grid-area: 5/2/5/5;
+.headerLinks{
+    text-decoration: none;
+    display: grid;
+    position: relative;
+    margin: 10px 5px 5px 10px;
+    font-size: 18px;
+    color: black;
+    width: fit-content;
+    padding: 2px 3px 2px 3px;
+    box-shadow: 0px 0px 3px 0.5px rgb(116, 111, 111);
+}
+
+.headerLinks:hover{
+    background-color: rgb(63, 62, 61,0.2);
+    border-radius: 2px;
+}
+
+.personalInfo{
+    margin-left: 18px;
+    font-size: 15px !important;
+}
+
+
+
+.contactDivs{
+    display: flex;
+    margin: 2px 2px 2px 2px;
+}
+
+.contactLinks{
+    margin: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    width:fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.contactLinks:hover{
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px 0.5px rgb(116, 111, 111);
+}
+
+#contactInfo {
+    display: grid;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    max-width: fit-content;
+}
+
+.contacts{
+    height: 20px;
+    width: 25px;
+    border-radius: 95%;
+}
+
+#mainBody {
+    margin: 15px auto 5px 16%;
+    text-align: center;
+    /*auto for sidenav*/
 }

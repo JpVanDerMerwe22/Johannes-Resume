@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="indexCss.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
+    <link rel="stylesheet" href="indexCss.css">
+
+</head>
 
 
-    <body>
-        
-        <header>
-            <h1 id="myName">Johannes Van Der Merwe</h1>
-
-        </header>
-
-        <div id="sideNav">
-            <img id="myPhoto" src="#" alt="profile photo">
-            <a class="headerLinks" href="#">About</a>
-            <a class="headerLinks" href="#">Education</a>
-            <a class="headerLinks" href="#">Experience</a>
-            <button id="contactInfo" type="button">Contact me</button>
-            <div id="contactLinks">
-                <!--Links added with javascript-->
+<body>
+    <!--Side Nav-->
+    <div id="sideNav">
+        <div id="navBox">
+            <img id="myPhoto" src="./Images/IMG-20220202-WA0010.jpeg" alt="profile photo">
+            <div id="navLinks">
+                <a class="headerLinks" href="#">Personal information</a>
+                <div id="personal">
+                <p class="personalInfo">Age: 29</p>
+                <p class="personalInfo">South African</p>
+                <p class="personalInfo">Krugersdorp, Johannesburg ZA</p>
+                </div>
+                <a class="headerLinks" href="#">About</a>
+                <a class="headerLinks" href="#">Education</a>
+                <div id="education">
+                    <a id="matric" class="headerLinks personalInfo" href="">Matric</a>
+                    <a id="N1" class="headerLinks personalInfo href="">N1</a>
+                </div>
+                <a class="headerLinks" href="#">Experience</a>
+                <div id="experience">
+                    <p class="personalInfo" href="">Cobra Bikes, 6 months</p>
+                    <p class="personalInfo" href="">ArcelorMittal SA, 7 years</p>
+                </div>
+                <div id="contactInfo">
+                    <div class="contactDivs">
+                        <img class="contacts" src="./Images/gmail_logo-100758589-large.3x2.jpg" alt="Gmail Logo">
+                        <a class="contactLinks" href="Email">hanruvandermerwe2@gmail.com</a>
+                    </div>
+                    <div class="contactDivs">
+                        <img class="contacts" src="./Images/Phone.png" alt="Cellphone Logo">
+                        <a class="contactLinks" href="0658520398">+27658520398</a>
+                    </div>
+                    <div class="contactDivs">
+                        <img class="contacts" src="./Images//linkedin-logo.png" alt="LinkedIn Logo">
+                        <a class="contactLinks" href="linkedIn">Johannes Van Der Merwe</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div id="mainBody">
-            
+
+    <!--Body-->
+    <div id="mainBody">
+        <div id="heading">
+            <h1 id="myName">Johannes Van Der Merwe</h1>
         </div>
-        
-        <footer>
-            <a id="email" href="Email">hanruvandermerwe2@gmail.com</a>
-            <a id="cellphone" href="cellNr">+27658520398</a><!--Open in cellphone keypad (google)-->
-            <a id="linkedIn" href="linkedIn">in</a>
-        </footer>
-        <script src="indexScript.js"></script>
 
-    </body>
+        <h3 id="about">About Me</h3>
+        <p>
+            eeeeeeeeeeeeeeeeeeee
+        </p>
+
+        <h4>Interests and aspirations</h4>
+        <p>
+            eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+        </p>
+
+        <h4></h4>Skills</h4>
+        <p>
+            eeeeeeeeeeeeeeeeeeeeeeeeeeee
+        </p>
+
+        <h3>Education</h3>
+        <p>
+            eeeeeeeeeeeeeeeeeeeeeee
+            <br>
+            <br>
+        </p>
+
+        <h3>Experience</h3>
+        <p>
+
+        </p>
+
+    </div>
+
+
+    <script src="indexScript.js"></script>
+
+</body>
 
 </html>
