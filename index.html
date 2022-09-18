@@ -9,45 +9,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="indexCss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 
 </head>
 
 
 <body>
+    <!-- Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-light topNav">
+        <div class="container-fluid">
+            <a id="info" class="navbar-brand" href="#" title="Personal Information">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"
+                            href="https://za.linkedin.com/in/johannes-van-der-merwe-478605201?trk=people-guest_people_search-card"
+                            title="LinkedIn" target="_blank"><img class="contacts" src="./Images//linkedin-logo.png"
+                                alt="LinkedIn Logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/JpVanDerMerwe22" title="GitHub"
+                            target="_blank"><img class="contacts" src="./Images/git.png"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="selected" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" tabindex="-1">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a id="About" class="dropdown-item" href="#bio">About</a></li>
+                            <li><a id="experienceLink" class="dropdown-item" href="#experience">Experience</a></li>
+                            <li><a id="educationLink" class="dropdown-item" href="#education">Education<a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--Side Nav-->
-    <div id="sideNav">
+    <div id="sideNav" style="display: none;">
         <div id="navBox">
             <img id="myPhoto" src="./Images/IMG-20220202-WA0010.jpeg" alt="profile photo">
             <div id="navLinks">
-                <a class="headerLinks" href="#">Personal information</a>
-                <div id="personal">
-                <p class="personalInfo">Age: 29</p>
-                <p class="personalInfo">South African</p>
-                <p class="personalInfo">Krugersdorp, Johannesburg ZA</p>
+                <div>
+                    <h5>Johannes Petrus Van Der Merwe</h5>
+                    <p class="personalInfo">Age: 29</p>
+                    <p class="personalInfo">South African</p>
+                    <p class="personalInfo">Krugersdorp, Johannesburg ZA</p>
                 </div>
-                <a class="headerLinks" href="#">About</a>
-                <a class="headerLinks" href="#">Education</a>
-                <div id="education">
-                    <a id="matric" class="headerLinks personalInfo" href="">Matric</a>
-                    <a id="N1" class="headerLinks personalInfo href="">N1</a>
-                </div>
-                <a class="headerLinks" href="#">Experience</a>
-                <div id="experience">
-                    <p class="personalInfo" href="">Cobra Bikes, 6 months</p>
-                    <p class="personalInfo" href="">ArcelorMittal SA, 7 years</p>
-                </div>
+
+
                 <div id="contactInfo">
                     <div class="contactDivs">
-                        <img class="contacts" src="./Images/gmail_logo-100758589-large.3x2.jpg" alt="Gmail Logo">
-                        <a class="contactLinks" href="Email">hanruvandermerwe2@gmail.com</a>
+                        <img class="contacts" src="./Images/gmail_logo-100758589-large.3x2.jpg" alt="Gmail">
+                        <a class="contactLinks" href="mailto:hanruvandermerwe2@gmail.com?subject=Project&body=Greetings%20Johannes">hanruvandermerwe2@gmail.com</a>
                     </div>
                     <div class="contactDivs">
-                        <img class="contacts" src="./Images/Phone.png" alt="Cellphone Logo">
-                        <a class="contactLinks" href="0658520398">+27658520398</a>
-                    </div>
-                    <div class="contactDivs">
-                        <img class="contacts" src="./Images//linkedin-logo.png" alt="LinkedIn Logo">
-                        <a class="contactLinks" href="linkedIn">Johannes Van Der Merwe</a>
+                        <img class="contacts" src="./Images/Phone.png" alt="Cellphone">
+                        <a class="contactLinks" href="tel:+27658520398">+27658520398</a>
                     </div>
                 </div>
             </div>
@@ -56,41 +82,66 @@
 
 
     <!--Body-->
-    <div id="mainBody">
-        <div id="heading">
-            <h1 id="myName">Johannes Van Der Merwe</h1>
+    <div id="mainBox">
+        <div id="bio" class="pageContainers" style="display:none">
+            <h5 class="personalInfo">About me</h5>
+            <p class="plainText">I'm an entry level web developer with a passion for both front end and back end
+                development
+                my back-end knowledge is very limited for the time being, but I am determined to be proficient in a
+                large number of
+                programming langauges.
+                On front-end development I consider myself a suitable team member, although I know have much to learn. I
+                would appreciate the opportunity
+                to work with experienced developers.
+            </p>
+            <h5 class="personalInfo">Interests, Hobbies and Goals</h5>
+            <p class="plainText">I have a broad range of interests, among which technology, electronics, psychology and
+                philosophy are my most liked topics. I enjoy spending my time doing research.
+                I work in a family business and developing our company website
+                and our partner companies' websites are part of my projects.
+                My goal is to become a proficient software and web developer with a good grasp on most major programming
+                langauges.
+            </p>
+            <h5 class="personalInfo">Personal</h5>
+            <p class="plainText">I am an agreeable person with empathy for those around me, and being helpfull wherever
+                I can is what I excell in. My personal life revolves around my work, in a sense if it's not related to
+                work I would not really have
+                a personality.
+            </p>
         </div>
 
-        <h3 id="about">About Me</h3>
-        <p>
-            eeeeeeeeeeeeeeeeeeee
-        </p>
+        <div id="education" class="pageContainers" style="display:none">
+            <h5 class="personalInfo">Education</h5>
+            <ul>
+                <li>Matric/Gr12 - <a class="headerLinks" src="#" target="_blank">Vrede Highschool</a></li>
+                <li>Web Development - <a class="headerLinks" src="#" target="_blank">HyperionDev</a>
+                    <ul>
+                        <li><a class="skillSet">HTML5</a></li>
+                        <li><a class="skillSet">CSS3</a></li>
+                        <li><a class="skillSet">jQuery</a></li>
+                        <li><a class="skillSet">Bootstrap</a></li>
+                        <li><a class="skillSet">JavaScript</a></li>
+                        <li><a class="skillSet">VersionControl</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-        <h4>Interests and aspirations</h4>
-        <p>
-            eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-        </p>
 
-        <h4></h4>Skills</h4>
-        <p>
-            eeeeeeeeeeeeeeeeeeeeeeeeeeee
-        </p>
-
-        <h3>Education</h3>
-        <p>
-            eeeeeeeeeeeeeeeeeeeeeee
-            <br>
-            <br>
-        </p>
-
-        <h3>Experience</h3>
-        <p>
-
-        </p>
-
+        <div id="experience" class="pageContainers">
+            <ul>
+                <li>ArcelorMittal - Production Line Operator, 6 years 9 months</li>
+                <li>BillsBest - Handyman, 5 months</li>
+                <li>Sparken Electrical - Foreman, August 1, 2022 - Current position</li>
+            </ul>
+        </div>
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script src="indexScript.js"></script>
 
 </body>
